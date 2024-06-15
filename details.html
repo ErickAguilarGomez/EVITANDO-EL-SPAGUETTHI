@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/layout.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/product.css" />
+    <title>Detalle de producto</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="./index.html" class="header-logo">
+          <img
+            class="header-logo-img"
+            src="./assets/tiendamia-logo.svg"
+            width="218"
+            alt="Logo store"
+          />
+        </a>
+        <ul class="header-social"></ul>
+      </div>
+      <nav id="navbar"></nav>
+    </header>
+    <main>
+      <div class="details-container">
+        <div id="details" class="columns-container">
+          <!-- Aquí puedes insertar contenido adicional dentro del div de detalles -->
+        </div>
+        <div class="product-checkout-block">
+          <div class="checkout-container">
+            <span class="checkout-total-label">Total:</span>
+            <h2 id="price" class="checkout-total-price"></h2>
+            <p class="checkout-description">
+              Incluye impuesto PAIS y percepción AFIP. Podés recuperar Ar$
+              50711 haciendo la solicitud en AFIP.
+            </p>
+            <ul class="checkout-policy-list">
+              <li>
+                <span class="policy-icon">
+                  <img src="./assets/truck.png" alt="Truck" />
+                </span>
+                <span class="policy-desc">
+                  Agrega el producto al carrito para conocer los costos de
+                  envío
+                </span>
+              </li>
+              <li>
+                <span class="policy-icon">
+                  <img src="./assets/plane.png" alt="Plane" />
+                </span>
+                <span class="policy-desc">
+                  Recibí aproximadamente entre 10 y 15 días hábiles,
+                  seleccionando envío normal
+                </span>
+              </li>
+            </ul>
+            <div class="checkout-process">
+              <div class="top">
+                <input type="number" min="1" value="1" />
+                <button type="button" class="cart-btn">
+                  Añadir al Carrito
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- Cierre del div class="details-container" -->
+      <div class="sales-block">
+        <h2 class="sales-title">Ofertas de la semana</h2>
+        <div id="product-container" class="product-container">
+          <!-- Aquí puedes insertar contenido adicional dentro del div de product-container -->
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div id="footer" class="footer-container"></div>
+      <div class="footer-copyright">Curso de HTML + CSS 2023</div>
+    </footer>
+
+    
+    <script src="scripts/details.js" type="module"></script>
+  </body>
+</html>
